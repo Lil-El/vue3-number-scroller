@@ -1,0 +1,50 @@
+{
+  "name": "vue3-number-scroller",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "index.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./css": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "changesets": "^1.0.2",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "vue-tsc": "^2.2.12"
+  },
+  "author": "Mino",
+  "homepage": "https://lil-el.github.io",
+  "description": "A Vue 3 component for scrolling numbers with customizable options.",
+  "keywords": [
+    "vue3",
+    "number scroller",
+    "vue3 number scroller",
+    "vue3 number scroller component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lil-El/vue3-number-scroller.git"
+  },
+  "license": "",
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
