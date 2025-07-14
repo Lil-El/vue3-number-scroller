@@ -1,9 +1,9 @@
 {
-  "name": "vue3-number-scroller",
+  "name": "@lil-el/vue3-number-scroller",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "type": "module",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
     "./css": "./dist/index.css"
@@ -23,7 +23,6 @@
     "@tailwindcss/vite": "^4.1.11",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
-    "changesets": "^1.0.2",
     "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
@@ -42,9 +41,13 @@
     "type": "git",
     "url": "https://github.com/Lil-El/vue3-number-scroller.git"
   },
-  "license": "",
+  "license": "MIT",
   "packageManager": "pnpm@10.10.0",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
