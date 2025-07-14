@@ -1,4 +1,4 @@
-# vue3-number-scroller
+# @lil-el/vue3-number-scroller
 
 数字滚动组件
 
@@ -9,13 +9,19 @@
 ## install
 
 ```bash
-pnpm i vue3-number-scroller
+pnpm i @lil-el/vue3-number-scroller
 ```
 
 ## usage
 
 ### basic
 
+**main.js**
+```js
+import "@lil-el/vue3-number-scroller/css"
+```
+
+**vue**
 ```html
 <template>
   <h2>Number</h2>
@@ -27,6 +33,8 @@ pnpm i vue3-number-scroller
 </template>
 
 <script setup>
+  import { Vue3NumberScroller } from "@lil-el/vue3-number-scroller";
+
   const value = ref(0);
 </script>
 ```
@@ -40,6 +48,8 @@ pnpm i vue3-number-scroller
 </template>
 
 <script setup>
+  import { Vue3NumberScroller } from "@lil-el/vue3-number-scroller";
+
   const value = ref(0);
 
   const style = {
