@@ -1,5 +1,6 @@
-import { installAll } from "./components/index";
-import { components } from "./components/index";
+import "./style.css";
+
+import { installAll, components } from "./components/index";
 
 export default {
   install: installAll,
