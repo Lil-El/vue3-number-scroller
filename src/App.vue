@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import NumberScroller from "./components/vue3-number-scroller.vue";
+import NumberScroller from "./components/vue3-number-scroller/index.vue";
 
 const num = ref(0);
 

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.es.tsbuildinfo",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": ["vite/client"], // 如果使用 Vite
+
+    "outDir": "dist/es", // 输出目录
+    "declarationDir": "dist/es",
+    "declaration": true, // 生成 .d.ts 文件
+    "emitDeclarationOnly": true, // 只生成声明文件
+    "rootDir": "src" // 源文件根目录
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "exclude": ["src/App.vue", "src/main.ts"]
+}
