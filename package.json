@@ -1,7 +1,7 @@
 {
   "name": "@lil-el/vue3-number-scroller",
   "private": false,
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "type": "module",
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -19,10 +19,10 @@
     "./*": "./*"
   },
   "files": [
-    "dist/es",
-    "dist/lib",
-    "dist/dist",
-    "src/global.d.ts"
+    "dist",
+    "lib",
+    "es",
+    "global.d.ts"
   ],
   "scripts": {
     "dev": "vite",

@@ -27,7 +27,7 @@ export default defineConfig({
           preserveModules: true, // 只在es格式下有效
           preserveModulesRoot: "src",
           entryFileNames: "[name].mjs",
-          dir: "dist/es",
+          dir: "es",
         },
         {
           format: "umd",
@@ -36,14 +36,14 @@ export default defineConfig({
             vue: "Vue",
           },
           inlineDynamicImports: true, // umd 格式生效
-          dir: "dist/dist",
+          dir: "dist",
         },
         {
           format: "commonjs", // 和 cjs 等价
           preserveModules: true,
           preserveModulesRoot: "src",
           entryFileNames: "[name].js",
-          dir: "dist/lib",
+          dir: "lib",
         },
       ],
     },
