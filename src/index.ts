@@ -1,10 +1,15 @@
+// import { installAll } from "./components";
+
+// export default {
+//   install: installAll,
+// };
+
+// export { Vue3NumberScroller } from "./components";
+
 import "./style.css";
 
-import { installAll, components } from "./components/index";
+import { Vue3NumberScroller } from "./components";
 
-export default {
-  install: installAll,
-  ...components,
-};
+export default Vue3NumberScroller;
 
-export * from "./components/index";
+export { Vue3NumberScroller };

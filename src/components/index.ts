@@ -1,10 +1,8 @@
 import type { App } from "vue";
-import * as NumberScroller from "./vue3-number-scroller";
-import * as HelloWorld from "./hello-world";
+import { Vue3NumberScroller } from "./vue3-number-scroller";
 
-export const components = {
-  NumberScroller,
-  HelloWorld,
+const components = {
+  Vue3NumberScroller,
 };
 
 export function installAll(app: App) {
@@ -16,3 +14,5 @@ export function installAll(app: App) {
     }
   });
 }
+
+export { Vue3NumberScroller };

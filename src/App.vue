@@ -1,7 +1,7 @@
 <template>
-  <NumberScroller class="mt-4" :num="numStr" />
-  <NumberScroller class="mt-4" :num="num" />
-  <NumberScroller
+  <Vue3NumberScroller class="mt-4" :num="numStr" />
+  <Vue3NumberScroller class="mt-4" :num="num" />
+  <Vue3NumberScroller
     class="mt-4"
     :num="num"
     :duration="1000"
@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import NumberScroller from "./components/vue3-number-scroller/index.vue";
+import Vue3NumberScroller from "../es/index";
 
 const num = ref(0);
 

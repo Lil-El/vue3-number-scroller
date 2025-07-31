@@ -20,22 +20,9 @@
 
 <script setup lang="ts">
 import { computed, toRefs } from "vue";
-import type { CSSProperties } from "vue";
+import type { Vue3NumberScrollerProps, DigitType } from "./type";
 
-interface Props {
-  num?: number | string;
-  duration?: number;
-  height?: number;
-  backStyle?: CSSProperties;
-}
-
-interface DigitType {
-  digit: number;
-  initial: number;
-  offset: number;
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Vue3NumberScrollerProps>(), {
   num: 0,
   duration: 1000,
   height: 16,
@@ -44,7 +31,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const { num, duration, height, backStyle } = toRefs(props);
 
-const mergedStyle = computed<CSSProperties>(() => ({
+const mergedStyle = computed<Vue3NumberScrollerProps["backStyle"]>(() => ({
   height: `${height.value}px`,
   lineHeight: `${height.value}px`,
   ...backStyle.value,
