@@ -2,9 +2,19 @@
 
 数字滚动组件
 
-![npm version](https://img.shields.io/npm/v/@lil-el/vue3-number-scroller?color=green)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![npm version](https://img.shields.io/npm/v/@lil-el/vue3-number-scroller?color=green) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
+
+## export
+
+```ts
+Vue3NumberScroller.install = () => {};
+
+export default Vue3NumberScroller;
+
+export Vue3NumberScroller;
+```
 
 ## install
 
@@ -16,12 +26,20 @@ pnpm i @lil-el/vue3-number-scroller
 
 ### basic
 
-**main.js**
-```js
-import "@lil-el/vue3-number-scroller/css"
+**main.ts**
+
+```ts
+import "@lil-el/vue3-number-scroller/css";
+import Vue3NumberScroller from "@lil-el/vue3-number-scroller";
+
+// ...
+
+// 全局注册
+createApp(App).use(Vue3NumberScroller).mount("#app");
 ```
 
 **vue**
+
 ```html
 <template>
   <h2>Number</h2>
@@ -33,7 +51,8 @@ import "@lil-el/vue3-number-scroller/css"
 </template>
 
 <script setup>
-  import { Vue3NumberScroller } from "@lil-el/vue3-number-scroller";
+  // 局部注册
+  // import { Vue3NumberScroller } from "@lil-el/vue3-number-scroller";
 
   const value = ref(0);
 </script>
@@ -53,11 +72,11 @@ import "@lil-el/vue3-number-scroller/css"
   const value = ref(0);
 
   const style = {
-    width: '20px',
-    color: 'white',
-    fontSize: '20px',
-    backgroundColor: 'white',
-    borderRight: '1px solid white'
+    width: "20px",
+    color: "white",
+    fontSize: "20px",
+    backgroundColor: "white",
+    borderRight: "1px solid white",
   };
 </script>
 ```

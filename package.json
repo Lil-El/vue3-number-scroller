@@ -1,7 +1,7 @@
 {
   "name": "@lil-el/vue3-number-scroller",
   "private": false,
-  "version": "0.0.1-alpha.10",
+  "version": "0.0.1",
   "type": "module",
   "main": "lib/index.js",
   "module": "es/index.mjs",
